@@ -1,0 +1,120 @@
+body {
+  /* background-image: url("../images/background.jpg"); */
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Description Section */
+#description .container {
+  padding: 0px 150px;
+}
+
+#description h1 {
+  background: -webkit-linear-gradient(#548CA8, #FFBCBC, #548CA8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Carousel Section */
+#album {
+  padding: 0px 250px;
+}
+
+#carouselSection {
+  height: 450px;
+}
+
+#album #carouselSection img {
+  width: 250px;
+}
+
+.carousel-indicators li {
+  padding: 0;
+  color: black;
+  filter: invert(100%);
+}
+
+.carousel-item,
+.active {
+  height: 400px;
+  padding: 50px;
+  text-align: center;
+}
+
+/* Make Carousel Fade */
+.carousel-fade .carousel-item {
+  opacity: 0;
+  transition-duration: .6s;
+  transition-property: opacity;
+}
+
+.carousel-fade .carousel-item.active,
+.carousel-fade .carousel-item-next.carousel-item-left,
+.carousel-fade .carousel-item-prev.carousel-item-right {
+  opacity: 1;
+}
+
+.carousel-fade .active.carousel-item-left,
+.carousel-fade .active.carousel-item-right {
+  opacity: 0;
+}
+
+.carousel-fade .carousel-item-next,
+.carousel-fade .carousel-item-prev,
+.carousel-fade .carousel-item.active,
+.carousel-fade .active.carousel-item-left,
+.carousel-fade .active.carousel-item-prev {
+  transform: translateX(0);
+  transform: translate3d(0, 0, 0);
+}
+
+.carousel-control-next,
+.carousel-control-prev
+
+/*, .carousel-indicators */
+  {
+  filter: invert(100%);
+}
+
+/* Media Section */
+@media (max-width: 768px) {
+
+  /* Description Section */
+  #description .container {
+    padding: 30px;
+    padding-bottom: 0px;
+  }
+
+  #description p {
+    text-align: justify;
+  }
+
+  /* Carousel Section */
+  #album {
+    padding: 0px 20px;
+  }
+
+  #carouselSection {
+    height: 450px;
+  }
+
+  #album #carouselSection img {
+    width: 190px;
+    padding-top: 90px;
+  }
+
+  #album #carouselSection iframe {
+    width: 290px;
+    padding-top: 90px;
+  }
+
+  .carousel-item,
+  .active {
+    padding: 0px;
+    text-align: center;
+  }
+
+  #album video {
+    width: 330px;
+  }
+}
